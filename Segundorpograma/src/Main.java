@@ -13,7 +13,7 @@ introducir su nombre combinando mayúsculas y minúsculas como quiera.
      */
 
     public static void main(String[] args) {
-        System.out.println("Hello, World!");
+        System.out.println("por alberto luna");
 
         Scanner sc = new Scanner(System.in);
         System.out.println("Ingrese su Nombre completo:");
@@ -25,21 +25,11 @@ introducir su nombre combinando mayúsculas y minúsculas como quiera.
         System.out.println(resultadoM);
         System.out.println(resultadom);
 
-        String re;
-        re = nombre.toUpperCase().charAt(0)+System.out.println("Nombre:"+ re );
-
-
-
-
-
-
-
-
-
-
-
-
-
+        char primeraletra = nombre.charAt(0);
+        char capitalizarprimeraletra = Character.toUpperCase(primeraletra);
+        String nombrecapitalizado;
+        nombrecapitalizado = nombre.replace(nombre.charAt(0), capitalizarprimeraletra);
+        System.out.println(nombrecapitalizado);
 
     }
 }
