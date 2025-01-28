@@ -15,14 +15,14 @@ muestre en pantalla la suma de todos los enteros desde 1 hasta X .
 
         System.out.println("introduce cualquier numero entero:");
         int num = sc.nextInt();
-        int sumatoria;
+        int suma=0;
 
 
         for(int i=0 ; i <= num;i++){
 
             System.out.println("el numero es:" +i);
-         int suma=0;
-            suma +=;
+
+            suma +=i;
             System.out.println("La sumatoria total es de:"+suma);
         }
 
