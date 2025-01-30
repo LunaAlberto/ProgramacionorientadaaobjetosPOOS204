@@ -1,5 +1,6 @@
 
 import java.util.*;
+import java.util.Scanner;
 public class tabladel10 {
     public static void main(String[] args) {
         System.out.println("Por Alberto ");
@@ -8,14 +9,14 @@ public class tabladel10 {
         /*
         3. Escribir un programa que muestre por pantalla la tabla de multiplicar del 1 al 10.
          */
-int num;
-      for(int i=1;i<=10;i++){
-          num = i*10;
-          System.out.println("Ingrese un numero"+i);
 
 
+        System.out.println("Ingrese 10 para empezar");
+        int empezar = input.nextInt();
 
-      }
+        for (int i = 1; i <= empezar; i++) {
+            System.out.println(empezar+"*"+i+"="+(empezar*i));
+        }
 
     }
 }
