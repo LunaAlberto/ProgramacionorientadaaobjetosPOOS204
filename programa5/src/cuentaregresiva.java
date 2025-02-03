@@ -19,8 +19,5 @@ por pantalla la cuenta atrás desde ese número hasta cero separados por comas.
 
  }
 
-
-
-
     }
 }
