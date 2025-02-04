@@ -10,52 +10,24 @@ public class Main {
         float multiplicacion;
         float divide;
         float div2;
+        int num;
+
+        //5,
 
         Scanner lu = new Scanner(System.in);
 
-        int num;
-
-        do {
-            System.out.println("Por favor, introduzca el primer numero");
-            num  = lu.nextInt();
+        System.out.println("Ingrese un numero: ");
+        num = lu.nextInt();
+        while (num!=1) {
 
             if (num % 2 == 0) {
-                num /=2;
-                System.out.println("el numero es:"+num);
-
-                } else if (num % 2 != 0) {
-
-                num*=3;
-                num+=1;
-
-                System.out.println("el numero es:"+num);
-
+                num /= 2;
+                System.out.println("el numero es:" + num);
+            } else{
+                num =num* 3+1;
+                System.out.println("el numero es:" + num);
             }
-            if (num % 2 == 0) {
-                num /=2;
-                System.out.println("el numero es:"+num);
-
-            } else if (num % 2 != 0) {
-
-                num*=3;
-                num+=1;
-
-                System.out.println("el numero es:"+num);
-
-            }
-            if (num % 2 == 0) {
-                num /=2;
-                System.out.println("el numero es:"+num);
-
-            } else if (num % 2 != 0) {
-
-                num*=3;
-                num+=1;
-
-                System.out.println("el numero es:"+num);
-
-            }
-        }while(num == 1);
+        }
 
     }
 }
