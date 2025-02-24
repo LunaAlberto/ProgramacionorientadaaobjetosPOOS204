@@ -1,43 +1,43 @@
 import java.util.*;
 import javax.swing.JOptionPane;
 import javax.swing.*;
+
 public class Main {
     public static void main(String[] args) {
         System.out.println("por alberto luna");
-        Funciones cuenta=new Funciones();
-        int cuentaatraspasar;
-        String depo;
-        double deposito;
-        double retiro;
-        double saldo;
-        String titular;
-        int edad;
+        Funciones f = new Funciones();
 
         String opc;
-        String nombre = JOptionPane.showInputDialog("Ingrese el nombre");
-        String nu1 = JOptionPane.showInputDialog("Ingrese el numero de cuenta");
-        int numeroCuenta = Integer.parseInt(nu1);
+        String nombre;
+        String marca;
+        String color;
+        Double peso;
+        Double precio;
+        String departamento;
+        String buscaarnombre;
+
+        do {
+            opc = JOptionPane.showInputDialog("Ingrese una opción: 1-para registrar electrodoméstico, " +
+                    "2-para consultar todo, " +
+                    "3-para consultar ventas, 4-para salir");
+
+            if (opc.equals("1")) {
+                nombre = JOptionPane.showInputDialog("Ingrese el nombre del artículo:");
+                marca = JOptionPane.showInputDialog("Ingrese la marca del artículo:");
+                color = JOptionPane.showInputDialog("Ingrese el color del artículo:");
+                peso = Double.parseDouble(JOptionPane.showInputDialog("Ingrese el peso del artículo:"));
+                precio = Double.parseDouble(JOptionPane.showInputDialog("Ingrese el precio del artículo:"));
+                departamento = JOptionPane.showInputDialog("Ingrese el departamento:");
+                f.registrarElectrodomestico(nombre, marca, color, peso, precio, departamento);
+
+            } else if (opc.equals("2")) {
+                f.consultarTodo();
 
 
-        opc=JOptionPane.showInputDialog("ingrese una opcion:1-Depositar,2-Retirar,3-Transferir,4-consultar saldo");
+            } else if (opc.equals("3")) {
+                JOptionPane.showMessageDialog(null, "Total de ventas: " + f.totalVentas);
+            }
 
-        switch(opc){
-            case "1":
-                depo = JOptionPane.showInputDialog("Ingrese el deposito:");
-                deposito=Double.parseDouble(depo);
-                cuenta.mostrardeposito(deposito);
-                break;
-                case "2":
-                    String ret = JOptionPane.showInputDialog("Ingrese el retiro:");
-                    double retro=Double.parseDouble(ret);
-                    cuenta.mostrarretiro(retro);
-                    break;
-                    case "3":
-                  String trasn = JOptionPane.showInputDialog("Ingrese la trasnferiencia:");
-                        break;
-                        case "4":
-                            JOptionPane.showInputDialog(null,"su saldo es:"+cuenta.saldo);
-                            break;
-        }
+        } while (!opc.equals("4"));
     }
 }
