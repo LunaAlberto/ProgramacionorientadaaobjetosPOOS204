@@ -1,8 +1,40 @@
 import javax.swing.JOptionPane;
 public class Funciones {
-    public int nnumerocuenta;
-    public double saldo;
-    public String Titular;
+
+
+    /////////se crearon metodos get y set se colocaron los metodos en privados
+    private int getNnumerocuenta() {
+        return nnumerocuenta;
+    }
+
+    private void setNnumerocuenta(int nnumerocuenta) {
+        this.nnumerocuenta = nnumerocuenta;
+    }
+
+    private int nnumerocuenta;
+
+    public double getSaldo() {
+        return saldo;
+    }
+
+    public void setSaldo(double saldo) {
+        this.saldo = saldo;
+    }
+
+    private double saldo;
+
+    public String getTitular() {
+        return Titular;
+    }
+
+    public void setTitular(String titular) {
+        Titular = titular;
+    }
+
+    private String Titular;
+
+    ///
+
 
     public Funciones(String t,int nCuenta,double s){
         Titular = t;
@@ -31,12 +63,6 @@ public class Funciones {
         }else {
             JOptionPane.showMessageDialog(null,"monto no valido");
         }
-
-
-
-
-
-
 
 
 

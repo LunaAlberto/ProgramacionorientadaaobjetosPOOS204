@@ -1,41 +1,22 @@
 public class Main {
-
     public static void main(String[] args) {
 
-        //crear objeto/Creamos objeto=Intanciar del objetos.
-       Spartan jefeMaestro = new Spartan();
-       Spartan reach = new Spartan();
+        //Instanciar un objeto de la clase Spartan
+        Spartan jefeMaestro = new Spartan("Rifle de asalto MA5B", 90, "Jefe Maestro", 100);
+        Spartan lu = new Spartan("Martillo Gravitatorio", 100, "subzero", 100);
 
-       //asignamos los atributos del objeto
-       jefeMaestro.nombre = " John 117 ";
-       jefeMaestro.salud=100;
-       jefeMaestro.escudo=90;
-       jefeMaestro.armaprincipal=" Rifle de asalto ";
+        //Uasr sus metodos
+        jefeMaestro.mostrarInfo();
+        jefeMaestro.atacar("Elite");
+        jefeMaestro.recargarArma(65);
+        jefeMaestro.correr(true);
 
-       //Usar sus metodos
-
-        jefeMaestro.mostrarinfo();
-        jefeMaestro.atacar(" Elite ");
-        jefeMaestro.recargArarma(65);
-        jefeMaestro.Correr(true);
-
-        /*
-        reach
-         */
-
-        //Segundo objeto
-        reach.nombre = " Emilie ";
-        reach.salud=0;
-        reach.escudo=0;
-        reach.armaprincipal=" Puños ";
-
-        //Usar sus metodos
-
-        reach.mostrarinfo();
-        reach.atacar(" Grunt ");
-        reach.recargArarma(10);
-        reach.Correr(false);
-
+        //Uasr sus metodos
+        lu.mostrarInfo();
+        lu.atacar("covenant");
+        lu.recargarArma(15);
+        lu.correr(true);
 
     }
-}//llave de la clase
+
+}
