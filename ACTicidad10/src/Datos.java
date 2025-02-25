@@ -1,6 +1,56 @@
 import javax.swing.JOptionPane;
 import java.util.Random;
 public class Datos {
+
+public Datos(int largo, String caracteresEspeciales, String mayusculas){
+    this.largo = largo;
+    this.caracteresEspeciales = caracteresEspeciales;
+    this.mayusculas = mayusculas;
+    this.password = generarPassword(largo, caracteresEspeciales, mayusculas);
+
+}
+
+    public int getLargo() {
+        return largo;
+    }
+
+    public void setLargo(int largo) {
+        this.largo = largo;
+    }
+
+    private int largo;
+
+    public String getCaracteresEspeciales() {
+        return caracteresEspeciales;
+    }
+
+    public void setCaracteresEspeciales(String caracteresEspeciales) {
+        this.caracteresEspeciales = caracteresEspeciales;
+    }
+
+    private String caracteresEspeciales;
+
+    public String getMayusculas() {
+        return mayusculas;
+    }
+
+    public void setMayusculas(String mayusculas) {
+        this.mayusculas = mayusculas;
+    }
+
+    private String mayusculas;
+
+    public String getPassword() {
+        return password;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
+    }
+
+    private String password;
+
+
     public void verificarlargo(int largo){
         if(largo>0 && largo <=8){
             JOptionPane.showMessageDialog(null, "El tamaño esta bien:");
@@ -9,7 +59,6 @@ public class Datos {
             JOptionPane.showMessageDialog(null, "no es un buen tamaño:");
         }
     }
-
     public void verificarcaracteresespeciales(String caracteresEspeciales){
         if(caracteresEspeciales.isEmpty()){
             JOptionPane.showMessageDialog(null, "ingrese una cracater especial:");
@@ -17,7 +66,6 @@ public class Datos {
             JOptionPane.showMessageDialog(null, "el caracter especial es correcto:");
         }
     }
-
     public void verificarmayusculas(String mayusculas){
         if(!mayusculas.matches("[A-Z]")){
             JOptionPane.showMessageDialog(null, "Ingrese una letr:");
@@ -25,7 +73,6 @@ public class Datos {
         }else{
             JOptionPane.showMessageDialog(null, "el mayuscula es correcto:");
         }
-
     }
 
     public String generarPassword(int largo,String caracteresEspeciales,String mayusculas) {
@@ -42,7 +89,6 @@ public class Datos {
 
         return password.toString();
     }
-
     public void verificarseguridad(String password){
 boolean seguridadValido = true;
 
@@ -59,7 +105,5 @@ if(seguridadValido){
 }
 
     }
-
-
 
 }

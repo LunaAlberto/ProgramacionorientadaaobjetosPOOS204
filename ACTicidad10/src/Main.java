@@ -5,14 +5,13 @@ public class Main {
 
     public static void main(String[] args) {
         System.out.println("Por Alberto Luna");
-
         int largo;
         String caracterEspecial;
         String mayusculas;
         String opc;
         String password;
 
-        Datos d=new Datos();
+        Datos d=new Datos(8,"!","A");
 
         do {
 
