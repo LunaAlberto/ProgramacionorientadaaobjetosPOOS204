@@ -7,9 +7,7 @@ public Datos(int largo, String caracteresEspeciales, String mayusculas){
     this.caracteresEspeciales = caracteresEspeciales;
     this.mayusculas = mayusculas;
     this.password = generarPassword(largo, caracteresEspeciales, mayusculas);
-
 }
-
     public int getLargo() {
         return largo;
     }

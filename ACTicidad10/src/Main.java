@@ -11,6 +11,7 @@ public class Main {
         String opc;
         String password;
 
+
         Datos d=new Datos(8,"!","A");
 
         do {
