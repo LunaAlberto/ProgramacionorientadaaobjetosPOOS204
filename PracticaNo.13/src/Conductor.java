@@ -2,7 +2,7 @@ import javax.swing.JOptionPane;
 import javax.swing.*;
 public class Conductor {
 
-    String nombre;
+    private String nombre;
 
     public String getNombre() {
         return nombre;
@@ -20,7 +20,7 @@ public class Conductor {
         this.identificacion = identificacion;
     }
 
-    String identificacion;
+    private String identificacion;
 
     public String getLicencia() {
         return licencia;
@@ -30,10 +30,10 @@ public class Conductor {
         this.licencia = licencia;
     }
 
-    String licencia;
+    private String licencia;
 
 
-    public void Conductor(String nombre,String identificacion,String licencia){
+    public Conductor(String nombre,String identificacion,String licencia){
         this.nombre = nombre;
         this.identificacion = identificacion;
         this.licencia = licencia;
@@ -43,7 +43,8 @@ public class Conductor {
         if(nombre.isEmpty()){
             JOptionPane.showMessageDialog(null,"El nombre no puede estar vacio");
         }else{
-            JOptionPane.showMessageDialog(null,"El nombre es correcto");
+            this.nombre = nombre;
+            JOptionPane.showMessageDialog(null,"El nombre es correcto"+nombre);
         }
 
     }
@@ -52,12 +53,19 @@ public class Conductor {
         if(identificacion.isEmpty()){
             JOptionPane.showMessageDialog(null,"El nombre no puede estar vacio");
         }else{
-            JOptionPane.showMessageDialog(null,"El nombre es correcto");
+            this.identificacion = identificacion;
+            JOptionPane.showMessageDialog(null,"El nombre es correcto"+identificacion);
         }
     }
 
-
-
+    public void licencia(String licencia){
+        if(licencia.isEmpty()){
+            JOptionPane.showMessageDialog(null,"La licensia no puede estar vacia");
+        }else{
+            this.licencia = licencia;
+            JOptionPane.showMessageDialog(null,"correcto"+licencia);
+        }
+    }
 
 
 
