@@ -22,7 +22,6 @@ public class Entrega {
     }
 
 
-
     public Entrega(String numeroguia, String estado) {
         this.numeroguia = numeroguia;
         this.estado = estado;

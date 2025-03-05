@@ -102,8 +102,7 @@ public class Main {
                                     case "6":
                                         estado = JOptionPane.showInputDialog("Ingresa el estado(en transito o entregado):");
                                         ent.actualizarestado(estado);
-
-
+                                        
                                         break;
                                         case "7":
 
