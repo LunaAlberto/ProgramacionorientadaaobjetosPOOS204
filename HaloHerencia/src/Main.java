@@ -16,7 +16,6 @@ public class Main {
         jefemaestroll.recibirDano(20);
         jefemaestroll.recargarEscudo();
 
-
         spartanlv jefemaestrolv = new spartanlv("Angel",40,"Pistola",0);
         jefemaestrolv.mostrarInfo();
         jefemaestrolv.usarpropulsores();

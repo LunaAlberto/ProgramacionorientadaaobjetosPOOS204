@@ -8,11 +8,9 @@ public class soldado {
         this.salud = salud;
         this.arma = arma;
     }
-
     public void atacar(String enemigo) {
         System.out.println(nombre + " ataca a " + enemigo + " con " + arma);
     }
-
     public void recibirDano(int dano) {
         salud -= dano;
         if (salud <= 0) {
@@ -22,7 +20,6 @@ public class soldado {
             System.out.println(nombre + " ahora tiene " + salud + " de salud.");
         }
     }
-
     public void mostrarInfo() {
         System.out.println("Soldado: " + nombre);
         System.out.println("Salud: " + salud);

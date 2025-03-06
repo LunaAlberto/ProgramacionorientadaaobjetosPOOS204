@@ -31,6 +31,4 @@ if(escudo< 0) {
         super.mostrarInfo();
         System.out.println("Escudo"+this.escudo);
     }
-
-
 }
