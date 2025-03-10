@@ -24,7 +24,15 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="GitHubPullRequestSearchHistory">{
+  &quot;history&quot;: [
+    {
+      &quot;searchQuery&quot;: &quot;FIN&quot;,
+      &quot;state&quot;: &quot;OPEN&quot;,
+      &quot;assignee&quot;: &quot;LunaAlberto&quot;
+    }
+  ],
   &quot;lastFilter&quot;: {
+    &quot;searchQuery&quot;: &quot;FIN&quot;,
     &quot;state&quot;: &quot;OPEN&quot;,
     &quot;assignee&quot;: &quot;LunaAlberto&quot;
   }
@@ -56,6 +64,13 @@
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  },
+  &quot;keyToStringList&quot;: {
+    &quot;GitStage.ChangesTree.GroupingKeys&quot;: [
+      &quot;directory&quot;,
+      &quot;module&quot;,
+      &quot;repository&quot;
+    ]
   }
 }</component>
   <component name="SharedIndexes">
@@ -83,10 +98,26 @@
       <workItem from="1740604026878" duration="30000" />
       <workItem from="1740632395140" duration="191000" />
       <workItem from="1740636354374" duration="48000" />
+      <workItem from="1741564292080" duration="283000" />
+      <workItem from="1741564639353" duration="7000" />
     </task>
+    <task id="LOCAL-00001" summary="S">
+      <option name="closed" value="true" />
+      <created>1741564376560</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1741564376560</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="FIN" />
+    <MESSAGE value="S" />
+    <option name="LAST_COMMIT_MESSAGE" value="S" />
   </component>
 </project>
