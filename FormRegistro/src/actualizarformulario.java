@@ -12,6 +12,7 @@ import javax.swing.JOptionPane;
 import java.sql.PreparedStatement;
 import java.sql.SQLException;
 import java.sql.ResultSet;
+import javax.swing.JOptionPane;
 
 
 public class actualizarformulario extends javax.swing.JFrame {
@@ -143,11 +144,19 @@ public class actualizarformulario extends javax.swing.JFrame {
       JOptionPane.showMessageDialog(this, "Todos los campos son pbligatorios", "Error", JOptionPane.INFORMATION_MESSAGE);
       return;
     }
+    
+    int conf = JOptionPane.showConfirmDialog(this,"estas seguro?","confirmar",JOptionPane.YES_NO_OPTION);
+    if(conf != JOptionPane.YES_NO_OPTION){
+        return;
+    }
+    
+    
+    
     //3
     UserCRUD cr=new UserCRUD();
     
     boolean status= cr.Updateusuarios(tx,nom, cor, con);
-    //4 avisamos status del insert
+    //4 avisamos status
     if(status){
          JOptionPane.showMessageDialog(this, "Usuario guardado en BD ", "exito", JOptionPane.INFORMATION_MESSAGE);
     }else {
