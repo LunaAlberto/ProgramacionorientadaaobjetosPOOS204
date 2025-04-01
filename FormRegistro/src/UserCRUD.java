@@ -11,6 +11,7 @@ import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.SQLException;
 import java.sql.ResultSet;//aqui estara la lista de los resultados
+import javax.swing.JOptionPane;
 
 public class UserCRUD {
     //constructor de la clase arranca la conexion a BD 
@@ -79,6 +80,22 @@ public class UserCRUD {
         }
         
     }
+    
+    public boolean deleteusuario(int id){
+       String sqlEliminar = "DELETE FROM usuarios WHERE id = ?";
+       try{
+           PreparedStatement ps = conexion.prepareStatement(sqlEliminar);
+           ps.setInt(1, id);
+           return ps.executeUpdate()>0;
+           
+       }catch(SQLException e){
+           JOptionPane.showMessageDialog(null,"Error al eliminar"+e.getMessage());
+           return false;
+       }
+       
+       
+       
+    }//fin de llame de eliminar
     
     
 }
