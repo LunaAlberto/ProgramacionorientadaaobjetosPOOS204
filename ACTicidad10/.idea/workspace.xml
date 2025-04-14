@@ -5,8 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="43e9f9b5-c9a9-4b9a-9af4-3236e882f97f" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../PracticaNo.13/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../PracticaNo.13/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PracticaNo.13/src/Vehiculos.java" beforeDir="false" afterPath="$PROJECT_DIR$/../PracticaNo.13/src/Vehiculos.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../practicaa/src/ejemplos.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../practicaa/src/subclase1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../practicaa/src/subclase2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Pasword/src/datos.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Pasword/src/datos.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../banco/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../banco/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -100,6 +105,8 @@
       <workItem from="1740636354374" duration="48000" />
       <workItem from="1741564292080" duration="283000" />
       <workItem from="1741564639353" duration="7000" />
+      <workItem from="1744660463272" duration="578000" />
+      <workItem from="1744662502838" duration="12000" />
     </task>
     <task id="LOCAL-00001" summary="S">
       <option name="closed" value="true" />

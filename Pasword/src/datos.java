@@ -35,11 +35,9 @@ public class datos {
             char randomChar = (char) (random.nextInt(26) + 'a');
             password.append(randomChar);
         }
-
         // Insertar el carácter especial y la mayúscula en posiciones aleatorias
         password.insert(random.nextInt(password.length() + 1), caracterEspecial);
         password.insert(random.nextInt(password.length() + 1), mayusculas);
-
         return password.toString();
     }
 }
